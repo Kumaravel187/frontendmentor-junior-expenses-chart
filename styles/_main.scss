@@ -1,0 +1,104 @@
+/* Styles for the main container */
+.main {
+  min-height: 100vh; /* Minimum height of the viewport */
+  display: flex; /* Flex container */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  background-color: $Cream; /* Background color */
+  padding: 1em; /* Padding for the main container */
+
+  /* Styles for the expenses section */
+  .expenses {
+    display: flex; /* Flex container for expenses section */
+    flex-direction: column; /* Arrange children in a column */
+    background-color: $Cream; /* Background color */
+    width: 100%; /* Full width */
+    max-width: 28rem; /* Maximum width */
+    gap: 2em; /* Spacing between child elements */
+    --pad: 2em 1em; /* Custom property for padding */
+    --rad: 1em; /* Custom property for border radius */
+
+    /* Styles for balance subsection */
+    &__balance {
+      background-color: $Soft-red; /* Background color */
+      border-radius: var(--rad); /* Border radius */
+      padding: var(--pad); /* Padding */
+      display: flex; /* Flex container */
+      align-items: center; /* Center content vertically */
+      justify-content: space-between; /* Space between children */
+
+      /* Styles for my-balance paragraph */
+      &--my-balance {
+        color: $Very-pale-orange; /* Text color */
+        .span {
+          display: block; /* Display as block element */
+          color: $Cream; /* Text color */
+          font-size: 1.5rem; /* Font size */
+          font-weight: 700; /* Font weight */
+        }
+      }
+    }
+
+    /* Styles for spending subsection */
+    &__spending {
+      background-color: $Very-pale-orange; /* Background color */
+      border-radius: var(--rad); /* Border radius */
+      padding: var(--pad); /* Padding */
+      display: flex; /* Flex container */
+      justify-content: center; /* Center content horizontally */
+      flex-direction: column; /* Arrange children in a column */
+      gap: 1.5em; /* Spacing between child elements */
+
+      /* Styles for overview paragraph */
+      &--overview {
+        color: $Dark-brown; /* Text color */
+        font-size: 1.5rem; /* Font size */
+        font-weight: 700; /* Font weight */
+      }
+
+      /* Styles for chart canvas */
+      &--chart {
+        cursor: pointer; /* Set cursor to pointer */
+      }
+
+      /* Styles for total subsection */
+      &--total {
+        display: flex; /* Flex container */
+        align-items: center; /* Center content vertically */
+        justify-content: space-between; /* Space between children */
+
+        /* Styles for month-total and month-increment paragraphs */
+        .month-total,
+        .month-increment {
+          .span {
+            display: block; /* Display as block element */
+          }
+        }
+
+        /* Styles for month-total paragraph */
+        .month-total {
+          color: $Medium-brown; /* Text color */
+          .span {
+            color: $Dark-brown; /* Text color */
+            font-size: 1.5rem; /* Font size */
+            font-weight: 700; /* Font weight */
+          }
+        }
+
+        /* Styles for month-increment paragraph */
+        .month-increment {
+          text-align: right; /* Align text to the right */
+          transform: translateY(1rem); /* Move text down */
+          color: $Dark-brown; /* Text color */
+          font-size: 1.25rem; /* Font size */
+          font-weight: 700; /* Font weight */
+          .span {
+            color: $Medium-brown; /* Text color */
+            font-size: 1rem; /* Font size */
+            font-weight: 400; /* Font weight */
+          }
+        }
+      }
+    }
+  }
+}

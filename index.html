@@ -1,0 +1,55 @@
+<!-- The following document type declaration specifies the document type and language -->
+<!DOCTYPE html>
+<html lang="en">
+  <!-- The head section contains metadata and links to external resources -->
+  <head>
+    <base href="." />
+    <!-- Sets the base URL for relative paths -->
+    <meta charset="UTF-8" />
+    <!-- Specifies the character set for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Configures the viewport settings for responsive design -->
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <!-- Links to an external stylesheet for styling -->
+    <script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Defers the loading of Chart.js library -->
+    <script defer src="./app.js" type="module"></script>
+    <!-- Defers the loading of the application script as a module -->
+    <title>Kumaravel| Expenses chart component</title>
+    <!-- Sets the title of the HTML document -->
+  </head>
+
+  <!-- The body section contains the content of the HTML document -->
+  <body>
+    <main class="main">
+      <!-- Main content area -->
+      <section class="expenses">
+        <!-- Section for displaying expense-related information -->
+        <div class="expenses__balance">
+          <!-- Subsection for displaying balance information -->
+          <p class="expenses__balance--my-balance">
+            My balance <span id="balance" class="span">$921.48</span>
+          </p>
+          <img src="./images/logo.svg" alt="logo" />
+          <!-- Displays the logo image -->
+        </div>
+        <div class="expenses__spending">
+          <!-- Subsection for displaying spending-related information -->
+          <p class="expenses__spending--overview">Spending - Last 7 days</p>
+          <canvas class="expenses__spending--chart" id="myChart"></canvas>
+          <!-- Displays a canvas for the Chart.js chart -->
+          <div class="expenses__spending--total">
+            <!-- Subsection for displaying total spending information -->
+            <p class="month-total">
+              Total this month <span id="total" class="span">$478.33</span>
+            </p>
+            <p class="month-increment">
+              +2.4%
+              <span class="span">from last month</span>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

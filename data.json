@@ -1,0 +1,44 @@
+[
+  {
+    "day": "mon",
+    "amount": 17.45,
+    "backgroundColor": "#ec775f",
+    "borderColor": "#ec775f"
+  },
+  {
+    "day": "tue",
+    "amount": 34.91,
+    "backgroundColor": "#76b5bc",
+    "borderColor": "#76b5bc"
+  },
+  {
+    "day": "wed",
+    "amount": 52.36,
+    "backgroundColor": "#ec775f",
+    "borderColor": "#ec775f"
+  },
+  {
+    "day": "thu",
+    "amount": 31.07,
+    "backgroundColor": "#ec775f",
+    "borderColor": "#ec775f"
+  },
+  {
+    "day": "fri",
+    "amount": 23.39,
+    "backgroundColor": "#ec775f",
+    "borderColor": "#ec775f"
+  },
+  {
+    "day": "sat",
+    "amount": 43.28,
+    "backgroundColor": "#ec775f",
+    "borderColor": "#ec775f"
+  },
+  {
+    "day": "sun",
+    "amount": 25.48,
+    "backgroundColor": "#ec775f",
+    "borderColor": "#ec775f"
+  }
+]
